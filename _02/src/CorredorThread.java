@@ -13,6 +13,15 @@ public class CorredorThread extends Thread{
     public void run() {
         super.run();
         int sufreUnPoquito;
+
+        /////////////////////////////////////////////
+        //  En el run de cada hilo hacemos
+        //  "sufra" la CPU. Con esto garantizamos
+        //  que el sistema operativo distribuya
+        //  los ciclos entre cada hilo dependiendo
+        //  de su prioridad
+        /////////////////////////////////////////////
+
         while (posicionCorredor < Carrera.longitud){
 
             for (long i = 0; i < 100000000L; i++) {

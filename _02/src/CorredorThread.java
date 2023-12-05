@@ -24,7 +24,7 @@ public class CorredorThread extends Thread{
 
         while (posicionCorredor < Carrera.longitud){
 
-            for (long i = 0; i < 100000000L; i++) {
+            for (long i = 0; i < 100000000; i++) {
                 sufreUnPoquito = 2*2;
             }
             posicionCorredor++;
